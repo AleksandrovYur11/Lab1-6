@@ -35,7 +35,7 @@ public class Tree {
         System.out.println(tree1.toString());
         Tree tree2 = new Tree (41,"Дуб");
         System.out.println(tree2.toString());
-        Tree tree3 = new Tree ();
+        Tree tree3 = new Tree();
     }
 
 }
