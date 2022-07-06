@@ -1,6 +1,6 @@
 package org.Itmo.java.lesson5;
 
-public class reversSuggestion {
+public class ReversSuggestion {
 
     // Метод, который инвертирует слова в предложении
     static void suggestionRevers(String text) {

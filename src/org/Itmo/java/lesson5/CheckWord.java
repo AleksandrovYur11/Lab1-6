@@ -2,7 +2,7 @@ package org.Itmo.java.lesson5;
 
 import java.util.Locale;
 
-public class checkWord {
+public class CheckWord {
 
     // Метод поиска полиндрома в предложении
     static void checkPalindrome(String text) {

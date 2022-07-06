@@ -1,6 +1,6 @@
 package org.Itmo.java.lesson5;
 
-public class searchLongWord {
+public class SearchLongWord {
 
     // Метод поиска самого сдлинного слова
     static void searchWord(String text) {
