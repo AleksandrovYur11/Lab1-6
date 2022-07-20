@@ -9,25 +9,18 @@ public class AppleTree extends Tree {
         this.numberApple = numberApple;
     }
 
-    public void setNumberApple(Integer numberApple) {
-        this.numberApple = numberApple;
-        System.out.println("Количество яблок: " + this.numberApple);
+    public void getNumberApple() {
+        System.out.println("Количество яблок: " + numberApple);
     }
 
-    public Integer getNumberApple() {
-        System.out.println("Количество яблок: " + this.numberApple);
-        return numberApple;
+    @Override
+    public void getTreeInfo() {
+        super.yearsTree = scanner.nextInt();
+        System.out.printf("Имя дерева (id) яблони: %s \n", super.idTree);
     }
 
-    // Метод изменяет поле в главном классе, а также выводит на экран переменную
     public void setYearsTree() {
         super.yearsTree = scanner.nextInt();
         System.out.printf("Яблоне %d лет(год)\n", super.yearsTree);
-    }
-
-    // Метод получения имени (id) дерева
-    public Double getIdTree() {
-        System.out.println("id Яблони: " + super.idTree);
-        return super.idTree;
     }
 }

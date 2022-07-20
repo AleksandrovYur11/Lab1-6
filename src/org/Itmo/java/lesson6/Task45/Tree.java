@@ -9,24 +9,12 @@ public class Tree {
     protected Double idTree;                    // В садах Греции каждое плодосное дерево имеет свой ID-номер (название)
     Scanner scanner = new Scanner(System.in);
 
-    public void setYearsTree() {
-        this.yearsTree = scanner.nextInt();
+    public void getTreeInfo() {
         System.out.printf("Дереву %d лет(год)\n", yearsTree);
-    }
-    // Метод получения возраста дерева
-    public Integer getYearsTree() {
-        System.out.printf("Дереву %d лет(год)\n", yearsTree);
-        return yearsTree;
     }
 
-    public Double getHeight() {
+    public void getHeight() {
         System.out.println("Высота дерева: " + this.height + " м");
-        return height;
-    }
-
-    public Double getIdTree() {
-        System.out.println("id Дерева: " + this.idTree);
-        return idTree;
     }
 
     public Tree(Double height, Integer yearsTree, Double idTree) {

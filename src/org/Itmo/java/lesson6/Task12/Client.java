@@ -9,12 +9,7 @@ public class Client extends Human implements BankCard {
     public Client(String name, String surName, String nameBank, Long numberCard) {
         super(name, surName);
         this.nameBank = nameBank;
-        if (numberCard.toString().length() > 6) {
-            this.numberCard = numberCard;
-        } else {
-            this.numberCard = 0L;
-            System.out.println("Данного номера карты не существует у пользователя: " + name + " " + surName);
-        }
+        this.numberCard = numberCard;
     }
 
     public Client(String name, String surName) {

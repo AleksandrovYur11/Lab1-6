@@ -7,12 +7,7 @@ public class BankEmployee extends Human implements BankCard {
     public BankEmployee(String name, String surName, String nameBank, Long numberCard) {
         super(name, surName);
         this.nameBank = nameBank;
-        if (numberCard.toString().length() > 6) {
-            this.numberCard = numberCard;
-        } else {
-            this.numberCard = 0L;
-            System.out.println("Данного номера карты не существует у работника банка: " + name + surName);
-        }
+        this.numberCard = numberCard;
     }
 
     public BankEmployee(String name, String surName) {
